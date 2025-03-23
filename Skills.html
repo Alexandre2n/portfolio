@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre DEHAINE</title>
+    <link rel="stylesheet" href="carroussel.css">
+</head>
+<header>
+    <div class="site-name">
+      <h1>Alexandre DEHAINE</h1>
+    </div>
+  </header>
+<body>
+  <nav class="navbar">
+    <ul>
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="Formations.html#">Formations</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Experiences.html">Expériences et projets perso</a></li>
+        <li><a href="Loisirs.html">Loisirs</a></li>
+    </ul>
+</nav>
+  <style>
+    /* Container for the images */
+    .image-row {
+        display: flex;
+        justify-content: space-between; /* Adjust space between images */
+        gap: 20px; /* Optional: space between images */
+        padding: 10%;
+        padding-top: 5%;
+    }
+    
+    /* Style for individual images */
+    .image-row img {
+        width: 150px; /* Set a fixed width for the images */
+        transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+    }
+    
+    /* Hover effect: scale the image when hovered */
+    .image-row img:hover {
+        transform: scale(1.2); /* Increase the size of the image on hover */
+    }
+    
+  </style>
+  <main>
+    <div class="image-row">
+      <img src="./Images/Skills/Java.png" alt="Java" class="hardJava"/>
+      <img src="./Images/Skills/HTML.png" alt="HTML"/>
+      <img src="./Images/Skills/CSS.png" alt="CSS"/>
+      <img src="./Images/Skills/C.png" alt="C"/>
+      <img src="./Images/Skills/CSharp.png" alt="C#"/>
+      <img src="./Images/Skills/TOEIC.png" alt="Toeic"/>
+  </div>
+  </main>
+</body>
+</html>

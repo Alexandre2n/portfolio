@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre DEHAINE</title>
+    <link rel="stylesheet" href="carroussel.css">
+</head>
+<header>
+    <div class="site-name">
+      <h1>Alexandre DEHAINE</h1>
+    </div>
+  </header>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Formations.html#">Formations</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Experiences.html">Expériences et projets perso</a></li>
+            <li><a href="Loisirs.html">Loisirs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="text-container">
+            <p><a href="https://gitlab.univ-lille.fr/alexandre.dehaine.etu/sae-1.01-implementation" target="_blank">SAÉ 1.01 : Implémentation d'un besoin client</a></p>
+            <p>Le but de cette SAÉ est de créer un générateur de site web statique en iJava. Il fallait donc automatiser la créations de pages avec un format précis, ainsi que l’importation des données qui servent à remplir ces pages. Le format des pages ainsi que les méthodes à utiliser étaient imposé par le client, il fallait donc également respecter le cahier des charges.</p>
+        </div>
+        <div class="carousel-container" id="carousel1">
+            <button class="prev" onclick="prevSlide(0)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E1.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E1.2.png" alt="Image 2">
+                <img class="carousel-image" src="./Images/Experiences/E1.3.png" alt="Image 3">
+            </div>
+            <button class="next" onclick="nextSlide(0)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots1">
+            <span class="dot" onclick="goToSlide(0, 0)"></span>
+            <span class="dot" onclick="goToSlide(1, 0)"></span>
+            <span class="dot" onclick="goToSlide(2, 0)"></span>
+        </div>
+
+        <div class="text-container">
+            <p><a href="https://gitlab.univ-lille.fr/florian.gambirasio.etu/Labyrinthe-Perdu" target="_blank">SAÉ 1.02 : Comparaisons d'algorithmes</a></p>
+            <p>Le but de cette SAÉ est de crée un Logiciel ludo-pédagogique pour élèves de primaire, donc un jeu solo tour par tour, d’énigmes non mathématique et de niveau primaire.
+                Nous avons opté pour un jeu dans lequel le joueur se déplacerai dans un Labyrinthe, en combattant des monstres (en répondant à des questions), jusqu’à vaincre le boss.
+                Je me suis chargé, entre autres mais majoritairement, de la génération aléatoire du Labyrinthe. J’ai opté pour un assemblage aléatoire fini de salles pré-définies, pérennant un Labyrinthe différant à chaque partie mais toujours facile à aborder et également moins complexe à programmer qu’une génération procédurale (totalement aléatoire et infinie).</p>
+        </div>
+        <div class="carousel-container" id="carousel2">
+            <button class="prev" onclick="prevSlide(1)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E2.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E2.2.png" alt="Image 2">
+            </div>
+            <button class="next" onclick="nextSlide(1)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots2">
+            <span class="dot" onclick="goToSlide(0, 1)"></span>
+            <span class="dot" onclick="goToSlide(1, 1)"></span>
+        </div>
+
+        <div class="text-container">
+            <p><a href="https://gitlab.univ-lille.fr/alexandre.dehaine.etu/sae-1.05-1.06-rdb-ee-site" target="_blank">SAÉ 1.05 - 1.06 : Recueil des besoins / Découverte de l’environnement économique </a></p>
+            <p>Le but de cette SAÉ était de crée une extension du site web d’une entreprise choisie. On devait créer une ou plusieurs pages reprenant la DA (direction artistique) du site original pour apporter à l’entreprise un service de covoiturage pour les employé afin d’aider la démarche RSE de l’entreprise. Nous avons donc crée un maquette du site puis 11 pages d’extension pour la société Air Liquide. Sur ces pages, nous pouvions lire et comprendre les démarches du projet, louer un véhicule, proposer un véhicule à la location, voir et gérer ses rendez-vous et réservations lorsque connecté ainsi que contacter l’entreprise et accéder aux conditions d’utilisation du service.</p>
+        </div>
+        <div class="carousel-container" id="carousel3">
+            <button class="prev" onclick="prevSlide(2)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E3.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E3.2.png" alt="Image 2">
+                <img class="carousel-image" src="./Images/Experiences/E3.3.png" alt="Image 3">
+                <img class="carousel-image" src="./Images/Experiences/E3.4.png" alt="Image 4">
+            </div>
+            <button class="next" onclick="nextSlide(2)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots3">
+            <span class="dot" onclick="goToSlide(0, 2)"></span>
+            <span class="dot" onclick="goToSlide(1, 2)"></span>
+            <span class="dot" onclick="goToSlide(2, 2)"></span>
+            <span class="dot" onclick="goToSlide(3, 2)"></span>
+        </div>
+
+        <div class="text-container">
+            <p><a href="https://gitlab.univ-lille.fr/sae2.01-2.02/2024/C6" target="_blank">SAÉ 2.01+2.02 : Développement d'une application et exploration algorithmique</a></p>
+            <p>Le but de cette SAÉ était de crée un logiciel qui permet à l’utilisateur de trouver le chemin idéal pour aller d’un point A à un point B en suivant au mieux les critères fournis, c’est à dire : le temps, la consommation de CO2 et le prix. Elle comprend donc trois parties : le logiciel, l’interface et les graphes.
+                Il faut que l’application soit efficace, pratique et intuitive. Le SAÉ n’est pas encore fini à ce stade mais j’ai développer quelques fonctions qui permettent d’importer des données depuis un CSV en ressources utilisables par les autre fonction, j’ai également fais le diagramme UML, le graphe ainsi que les fichiers CSV respectant des normes strictes pour que les données soit facilement importé dans les fonctions mentionnées ci-dessus.</p>
+        </div>
+        <div class="carousel-container" id="carousel4">
+            <button class="prev" onclick="prevSlide(3)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E4.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E4.2.png" alt="Image 2">
+            </div>
+            <button class="next" onclick="nextSlide(3)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots4">
+            <span class="dot" onclick="goToSlide(0, 3)"></span>
+            <span class="dot" onclick="goToSlide(1, 3)"></span>
+        </div>
+
+        <div class="text-container">
+            <p><a href="https://gitlab.univ-lille.fr/2024-projet-agile-de-rentree/groupe-13" target="_blank">Projet Agile : Infinite Dungeons</a></p>
+            <p>Le but de ce projet était de développer une petite application, ici un jeu, en java en une semaine en suivant la méthode agile. Nous avons réalisé le jeu Infinite Dungeons, un jeu dont le but est d’avancé le plus loin possible dans une succession de combats infini.</p>
+        </div>
+        <div class="carousel-container" id="carousel5">
+            <button class="prev" onclick="prevSlide(4)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E5.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E5.2.png" alt="Image 2">
+                <img class="carousel-image" src="./Images/Experiences/E5.3.png" alt="Image 3">
+                <img class="carousel-image" src="./Images/Experiences/E5.4.png" alt="Image 4">
+                <img class="carousel-image" src="./Images/Experiences/E5.5.png" alt="Image 5">
+                <img class="carousel-image" src="./Images/Experiences/E5.6.png" alt="Image 6">
+            </div>
+            <button class="next" onclick="nextSlide(4)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots5">
+            <span class="dot" onclick="goToSlide(0, 4)"></span>
+            <span class="dot" onclick="goToSlide(1, 4)"></span>
+            <span class="dot" onclick="goToSlide(2, 4)"></span>
+            <span class="dot" onclick="goToSlide(3, 4)"></span>
+            <span class="dot" onclick="goToSlide(4, 4)"></span>
+            <span class="dot" onclick="goToSlide(5, 4)"></span>
+        </div>
+
+        <div class="text-container">
+            <p><a href="https://gitlab.univ-lille.fr/sae302/2024/G1_SAE3.3" target="_blank">SAÉ 3.02 Développement d'application d'apprentissage supervisé</a></p>
+            <p>Le but de cette SAE était de mettre en place l'organisation d’un projet et de créer, en équipe, une application en suivant une démarche de développement itérative et incrémentale (algo K-NN). En partant d'un besoin décrit de manière imprécise ou incomplète par un client, l'objectif était de clarifier, compléter, collecter et formaliser le besoin, puis de développer une application communicante intégrant la manipulation des données et respectant les paradigmes de qualité (ergonomie des IHM, qualité logicielle…).</p>
+        </div>
+        <div class="carousel-container" id="carousel6">
+            <button class="prev" onclick="prevSlide(5)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E6.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E6.2.png" alt="Image 2">
+                <img class="carousel-image" src="./Images/Experiences/E6.3.png" alt="Image 3">
+            </div>
+            <button class="next" onclick="nextSlide(5)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots6">
+            <span class="dot" onclick="goToSlide(0, 5)"></span>
+            <span class="dot" onclick="goToSlide(1, 5)"></span>
+            <span class="dot" onclick="goToSlide(2, 5)"></span>
+        </div>
+
+        <div class="text-container">
+            <p><a href="https://gitlab.univ-lille.fr/alexandre.dehaine.etu/sae-r4.01" target="_blank">SAÉ S4.A02.1 : Web Backend</a></p>
+            <p>L’objectif de cette SAÉ consistait à réaliser une petite application web de réseau social nommée CampusTalk permettant à chaque utilisateur de créer des fils de discussion avec une ou plusieurs personnes, de poster des messages textuels dans les différents fils, et de lire les messages des autres abonnés au même fil.</p>
+        </div>
+        <div class="carousel-container" id="carousel7">
+            <button class="prev" onclick="prevSlide(6)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E7.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E7.2.png" alt="Image 2">
+                <img class="carousel-image" src="./Images/Experiences/E7.3.png" alt="Image 3">
+            </div>
+            <button class="next" onclick="nextSlide(6)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots7">
+            <span class="dot" onclick="goToSlide(0, 6)"></span>
+            <span class="dot" onclick="goToSlide(1, 6)"></span>
+            <span class="dot" onclick="goToSlide(2, 6)"></span>
+        </div>
+
+        <div class="text-container">
+            <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2903207756" target="_blank">Projet Personel : Terraria One Piece Mod</a></p>
+            <p>J’ai rejoint ce projet en janvier 2022 mais il existe depuis décembre 2022. C’est un Mod (contenu additionnel d’un jeu vidéo crée par la communauté) visant à amener l’univers du manga One Piece dans le jeu vidéo Terraria. Nous somme 3 à travailler dessus : Minion, le créateur originel du mod, Jacsmith, qui à rejoint peu après, et moi. Le projet n’est pas open source il n’est donc pas possible de voir le code pour le moment. </p>
+        </div>
+        <div class="carousel-container" id="carousel8">
+            <button class="prev" onclick="prevSlide(7)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="./Images/Experiences/E8.1.png" alt="Image 1">
+                <img class="carousel-image" src="./Images/Experiences/E8.2.png" alt="Image 2">
+                <img class="carousel-image" src="./Images/Experiences/E8.3.png" alt="Image 3">
+                <img class="carousel-image" src="./Images/Experiences/E8.4.gif" alt="Image 4">
+            </div>
+            <button class="next" onclick="nextSlide(7)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots8">
+            <span class="dot" onclick="goToSlide(0, 7)"></span>
+            <span class="dot" onclick="goToSlide(1, 7)"></span>
+            <span class="dot" onclick="goToSlide(2, 7)"></span>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2025 Nihon no Monogatari. Tous droits réservés.</p>
+    </footer>
+
+    <script src="carrousel.js"></script>
+</body>
+</html>

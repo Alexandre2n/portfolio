@@ -1,0 +1,11 @@
+image: node:latest
+
+pages:
+  script:
+    - npm install -g serve
+    - serve -s . -l 4000
+  artifacts:
+    paths:
+      - ./
+  only:
+    - master

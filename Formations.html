@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre DEHAINE</title>
+    <link rel="stylesheet" href="carroussel.css">
+</head>
+<header>
+    <div class="site-name">
+      <h1>Alexandre DEHAINE</h1>
+    </div>
+  </header>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="Formations.html#">Formations</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Experiences.html">Expériences et projets perso</a></li>
+            <li><a href="Loisirs.html">Loisirs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Premier carrousel -->
+        <div class="carousel-container" id="carousel1">
+            <button class="prev" onclick="prevSlide(0)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="image1.jpg" alt="Image 1">
+                <img class="carousel-image" src="image2.jpg" alt="Image 2">
+                <img class="carousel-image" src="image3.jpg" alt="Image 3">
+            </div>
+            <button class="next" onclick="nextSlide(0)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots1">
+            <span class="dot" onclick="goToSlide(0, 0)"></span>
+            <span class="dot" onclick="goToSlide(1, 0)"></span>
+            <span class="dot" onclick="goToSlide(2, 0)"></span>
+        </div>
+
+        <!-- Zone de texte -->
+        <div class="text-container">
+            <p>Bienvenue dans notre galerie d'images ! Découvrez nos magnifiques paysages à travers ces carrousels.</p>
+        </div>
+
+        <!-- Deuxième carrousel -->
+        <div class="carousel-container" id="carousel2">
+            <button class="prev" onclick="prevSlide(1)">&#10094;</button>
+            <div class="carousel">
+                <img class="carousel-image" src="image4.jpg" alt="Image 4">
+                <img class="carousel-image" src="image5.jpg" alt="Image 5">
+                <img class="carousel-image" src="image6.jpg" alt="Image 6">
+            </div>
+            <button class="next" onclick="nextSlide(1)">&#10095;</button>
+        </div>
+        <div class="dots-container" id="dots2">
+            <span class="dot" onclick="goToSlide(0, 1)"></span>
+            <span class="dot" onclick="goToSlide(1, 1)"></span>
+            <span class="dot" onclick="goToSlide(2, 1)"></span>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2025 Nihon no Monogatari. Tous droits réservés.</p>
+    </footer>
+
+    <script src="carrousel.js"></script>
+</body>
+</html>

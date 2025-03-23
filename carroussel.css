@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    background: linear-gradient(135deg, #e3f2f1, #b0bec5); /* Dégradé de bleu clair et gris clair */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ajout d'un effet de texture subtile */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('texture.png') repeat;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgba(60, 60, 60, 0.8); /* Fond gris foncé avec transparence */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Logo */
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Nom du site */
+.site-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.site-name h1 {
+    font-size: 2rem;
+    color: #F1F8E9; /* Blanc cassé */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Container pour le bouton "Se connecter" */
+.login-container {
+    flex-shrink: 0;
+}
+
+/* Bouton Se connecter */
+.login-button {
+    background-color: #455a64; /* Gris bleu foncé */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-button:hover {
+    background-color: #607d8b; /* Gris bleu clair */
+    border-color: #607d8b;
+}
+
+/* Barre de navigation modernisée */
+.navbar {
+    background: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(135deg, rgba(38, 50, 56, 0.9), rgba(96, 125, 139, 0.9)); /* Dégradé bleu-gris */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #F1F8E9;
+    font-size: 18px;
+    padding: 10px 15px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #81c784; /* Vert clair */
+    transform: scale(1.1);
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #80cbc4; /* Bleu clair */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Effet verre dépoli pour les sections */
+main, .text-container {
+    padding: 20px;
+    backdrop-filter: blur(10px); 
+    flex: 1;
+    padding: 40px 0;
+}
+
+/* Carrousel */
+.carousel-container {
+    position: relative;
+    width: 600px; /* Largeur du conteneur */
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.carousel-container img {
+    width: 100%; /* L'image s'adapte à la largeur du conteneur */
+    height: 100%; /* L'image s'adapte à la hauteur du conteneur */
+    object-fit: contain; /* L'image conserve son rapport d'aspect sans déformation */
+    object-position: center; /* Centrer l'image si elle est plus petite que le conteneur */
+    margin: 0 auto;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.prev, .next {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F1F8E9;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: gray;
+}
+
+/* Style de la zone de texte */
+.text-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    font-size: 18px;
+    color: #455a64; /* Gris bleu foncé */
+}
+
+/* Pied de page */
+.footer {
+    background-color: #455a64;
+    color: #F1F8E9;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+.poster_photo {
+    float: right;
+    margin-left: 30px;
+    padding-right: 10%;
+}
+
+.intro{
+    padding-left: 20% ;
+}
